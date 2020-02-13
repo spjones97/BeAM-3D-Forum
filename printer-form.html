@@ -115,6 +115,37 @@
                         <button class="btn btn-warning" type="button" @click="" onclick=""
                             id="submitButton">SUBMIT</button>
                     </div>
+                    <!-- Current print table -->
+                    <table class="table">
+                        <h3 style="text-align: center; text-decoration: underline;">Current Prints</h3>
+                        <thead class="thead-light">
+                            <th>Printer #</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Outcome</th>
+                            <th>Done</th>
+                        </thead>
+                        <tbody>
+                            <tr v-cloak v-for="" :key="index">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" id="success" v-model="isSuccess">
+                                    <label for="success">Success</label>
+                                    <input type="checkbox" id="fail" v-model="isFail">
+                                    <label for="fail">Fail</label>
+                                </td>
+                                <td>
+                                    <button class="btn btn-warning" type="button">DONE</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </form>
             </div>
         </div>
